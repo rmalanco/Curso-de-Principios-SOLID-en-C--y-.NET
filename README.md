@@ -1,0 +1,161 @@
+# Curso de Principios SOLID en C# y .NET
+--------------------------------------
+¿Qué son las buenas prácticas y el código limpio?
+
+Las buenas prácticas y el código limpio se refieren a un conjunto de principios, técnicas y estándares que se utilizan en el desarrollo de software para producir código de alta calidad, fácil de entender, mantener y escalar.
+
+Las buenas prácticas son enfoques establecidos y recomendados en la industria del desarrollo de software. Estas prácticas abarcan diferentes aspectos del desarrollo, como el diseño, la estructura del código, la nomenclatura, la documentación y la gestión del proyecto. Siguiendo estas prácticas, los desarrolladores pueden mejorar la calidad del software, reducir la complejidad, aumentar la eficiencia y facilitar la colaboración en equipos de desarrollo.
+
+El código limpio se refiere a la escritura de código que es fácil de entender y mantener. Un código limpio se caracteriza por ser legible, conciso, modular y libre de redundancias innecesarias. Se busca que el código sea comprensible no solo por el autor original, sino también por otros desarrolladores que puedan trabajar en él en el futuro.
+
+Algunos aspectos clave del código limpio incluyen:
+
+Nomenclatura descriptiva: El uso de nombres significativos para las variables, métodos y clases ayuda a comprender la funcionalidad y el propósito de cada componente.
+
+Estructura y organización: El código debe estar bien estructurado, con una adecuada separación de responsabilidades, y seguir principios de diseño como el principio de responsabilidad única (SRP) y la separación de preocupaciones (SoC).
+
+Evitar duplicación: La duplicación de código debe evitarse utilizando técnicas de reutilización y abstracción, como la extracción de métodos o la creación de componentes reutilizables.
+
+Comentarios y documentación: Los comentarios deben utilizarse para explicar el propósito y la lógica detrás del código, pero sin caer en exceso de comentarios innecesarios que puedan dificultar la lectura.
+
+Pruebas unitarias: El código limpio se beneficia de un conjunto sólido de pruebas unitarias que validen su funcionalidad y permitan realizar cambios sin introducir regresiones.
+
+La adopción de buenas prácticas y la escritura de código limpio promueven la calidad del software, facilitan su mantenimiento, mejora la colaboración entre desarrolladores y contribuye a la eficiencia y escalabilidad del proyecto.
+--------------------------------------------------------------------------------------------------------------
+¿Qué son las buenas prácticas y el código limpio?>
+
+Buenas prácticas-Best practices
+
+Nos permiten resolver conflictos de escenarios comunes.
+Brindan guías que son sencillas de comprender, aprender y aplicar.
+Permiten contar con una estructura similar para múltiples proyectos.
+Diferencia entre buenas prácticas y estándares
+
+Las buenas prácticas ya están comprobadas; pues han sido utilizadas muchas veces y esto comprueba su funcionalidad. Estas ayudan a tener un mejor código, arquitectura y a comprender fácilmente el código.
+Código limpio- Clean code
+
+Se refiere a buenas prácticas dirigidas al código.
+Es fácil de entender, analizar, mantener, actualizar y escalar.
+¿Cómo lograr código limpio?
+
+Algunas reglas a seguir son:
+
+Mantener bajo acoplamiento. Se busca que no exista dependencia entre componentes.
+Uso de sintaxis simple y actual.
+Evitar incorporar muchas librerías de terceros. Para evitar dependencias y mantener el control del código.
+Distribución de responsabilidades. Cada componente debe contar con una sola responsabilidad específica.
+Crear componentes pequeños.
+--------------------------------------------------------------------------------------------------------------
+¿Qué son los principios SOLID?
+
+Los principios SOLID son un conjunto de principios de diseño de software que se consideran fundamentales para crear código limpio, modular, extensible y fácilmente mantenible. Estos principios fueron acuñados por el ingeniero de software Robert C. Martin (también conocido como "Uncle Bob") y se utilizan ampliamente en el desarrollo orientado a objetos. Cada letra del acrónimo SOLID representa un principio específico:
+
+Principio de Responsabilidad Única (Single Responsibility Principle - SRP): Este principio establece que una clase o módulo debería tener una única responsabilidad y una única razón para cambiar. Cada clase debe tener una única tarea bien definida, lo que facilita la comprensión, el mantenimiento y la reutilización del código.
+
+Principio de Abierto/Cerrado (Open/Closed Principle - OCP): Según este principio, las entidades de software (clases, módulos, etc.) deben estar abiertas para su extensión pero cerradas para su modificación. En lugar de modificar directamente una clase existente, se deben utilizar mecanismos de extensión como la herencia, la composición o el uso de interfaces para agregar nuevas funcionalidades.
+
+Principio de Sustitución de Liskov (Liskov Substitution Principle - LSP): Este principio establece que los objetos de una clase derivada deben poder sustituir sin problemas a los objetos de la clase base sin alterar el comportamiento esperado del programa. Esto implica que las clases derivadas deben cumplir con el contrato definido por la clase base y no deben introducir comportamientos inesperados.
+
+Principio de Segregación de Interfaces (Interface Segregation Principle - ISP): El ISP establece que los clientes de una interfaz no deben estar obligados a depender de métodos que no utilizan. En lugar de tener interfaces monolíticas, se deben definir interfaces más específicas y cohesivas para que los clientes solo dependan de los métodos que necesitan.
+
+Principio de Inversión de Dependencia (Dependency Inversion Principle - DIP): Este principio plantea que los módulos de alto nivel no deben depender de módulos de bajo nivel, sino que ambos deben depender de abstracciones. Además, las abstracciones no deben depender de los detalles concretos, sino que los detalles deben depender de las abstracciones. Esto se logra a través de la inversión de las dependencias, utilizando inyección de dependencias u otros mecanismos similares.
+
+Estos principios SOLID proporcionan pautas valiosas para el diseño de software orientado a objetos, ayudando a crear sistemas más flexibles, mantenibles y extensibles. Siguiendo estos principios, se busca reducir el acoplamiento, mejorar la cohesión y fomentar la reutilización de código, lo que conduce a un diseño más sólido y de alta calidad.
+--------------------------------------------------------------------------------------------------------------
+Conociendo el principio de responsabilidad única
+
+El principio de responsabilidad única (SRP) establece que una clase o módulo debe tener una única razón para cambiar. Este principio se centra en la cohesión, que es una medida de cuánto está relacionado el contenido de una clase o módulo. Una clase o módulo cohesivo debe tener una única responsabilidad, es decir, una única tarea bien definida.
+
+Principio de responsabilidad única
+
+• Single responsibility principle
+• Distribuye las responsabilidades en diferentes componentes dentro de un sistema, donde cada componente tiene una única responsabilidad
+• Aplica para módulos, clases, métodos y funciones
+--------------------------------------------------------------------------------------------------------------
+Conociendo el principio de Abierto/Cerrado
+
+El principio de abierto/cerrado (OCP) establece que las entidades de software (clases, módulos, funciones, etc.) deben estar abiertas para su extensión pero cerradas para su modificación. Esto significa que el comportamiento de una entidad de software debe poder extenderse sin tener que modificar su código fuente.
+
+Principio de abierto/cerrado
+
+• Open/closed principle
+• Las entidades de software deben estar abiertas para su extensión pero cerradas para su modificación
+• Se busca evitar la modificación de código fuente existente
+• Se busca extender el comportamiento de una entidad de software sin modificar su código fuente
+--------------------------------------------------------------------------------------------------------------
+Conociendo el principio de sustitución de Liskov
+
+El principio de sustitución de Liskov (LSP) establece que los objetos de una clase derivada deben poder sustituir sin problemas a los objetos de la clase base sin alterar el comportamiento esperado del programa. Esto significa que los objetos de una clase derivada deben ser substituibles por objetos de la clase base sin romper la integridad del programa.
+
+Principio de sustitución de Liskov
+
+• Liskov substitution principle
+• Los objetos de una clase derivada deben poder sustituir sin problemas a los objetos de la clase base sin alterar el comportamiento esperado del programa
+• Los objetos de una clase derivada deben ser substituibles por objetos de la clase base sin romper la integridad del programa
+--------------------------------------------------------------------------------------------------------------
+Conociendo el principio de segregación de interfaces
+
+El principio de segregación de interfaces (ISP) establece que los clientes de una interfaz no deben estar obligados a depender de métodos que no utilizan. Este principio se centra en la cohesión, que es una medida de cuánto está relacionado el contenido de una clase o módulo. Una clase o módulo cohesivo debe tener una única responsabilidad, es decir, una única tarea bien definida.
+
+Principio de segregación de interfaces
+
+• Interface segregation principle
+• Los clientes de una interfaz no deben estar obligados a depender de métodos que no utilizan
+• Se busca evitar interfaces monolíticas
+• Se busca definir interfaces más específicas y cohesivas
+--------------------------------------------------------------------------------------------------------------
+Conociendo el principio de inversión de dependencia
+
+El principio de inversión de dependencia (DIP) establece que los módulos de alto nivel no deben depender de módulos de bajo nivel, sino que ambos deben depender de abstracciones. Además, las abstracciones no deben depender de los detalles concretos, sino que los detalles deben depender de las abstracciones. Esto se logra a través de la inversión de las dependencias, utilizando inyección de dependencias u otros mecanismos similares.
+
+Principio de inversión de dependencia
+
+• Dependency inversion principle
+• Los módulos de alto nivel no deben depender de módulos de bajo nivel, sino que ambos deben depender de abstracciones
+• Las abstracciones no deben depender de los detalles concretos, sino que los detalles deben depender de las abstracciones
+• Se logra a través de la inversión de las dependencias, utilizando inyección de dependencias u otros mecanismos similares
+
+Existen 3 tipos de dependencias:
+
+• Por el Constructor
+• Por los Propiedades
+• Por los Parámetros
+
+Ejemplo de dependencia por el constructor:
+
+Code C#:
+
+public class Customer
+{
+    private readonly ICustomerRepository _customerRepository;
+
+    public Customer(ICustomerRepository customerRepository)
+    {
+        _customerRepository = customerRepository;
+    }
+}
+
+Ejemplo de dependencia por los propiedades
+
+Code C#:
+
+public class Customer
+{
+    public ICustomerRepository CustomerRepository { get; set; }
+}
+
+Ejemplo de dependencia por los parámetros
+
+Code C#:
+
+public class Customer
+{
+    public void Add(ICustomerRepository customerRepository)
+    {
+        // ...
+    }
+}
+
+La inyección de dependencias es fundamental para poder aplicar la metodología de Test Driven Development (TDD) o Desarrollo Guiado por Pruebas.
+
+--------------------------------------------------------------------------------------------------------------
